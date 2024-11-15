@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="map-contain">
+            <img src="images/Карта.png" alt="Карта" class="map-image">
+            <div id="character" class="character"></div>
+    
+            <button id="moveButton" class="move-button">В универ</button>
+            <div class="slider-container">
+                <button id="leftButton" class="slider-button">◄</button>
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <div class="slider-item">1</div>
+                        <div class="slider-item">2</div>
+                        <div class="slider-item">3</div>
+                        <div class="slider-item">4</div>
+                        <div class="slider-item">5</div>
+                        <div class="slider-item">6</div>
+                        <div class="slider-item">7</div>
+                        <div class="slider-item"></div>
+                        <div class="slider-item"></div>
+                        <div class="slider-item"></div>
+                        <div class="slider-item"></div>
+                    </div>
+                </div>
+                <button id="rightButton" class="slider-button">►</button>
+            </div>
+
+            <button id="ratingButton" class="rating-button">Рейтинг</button>
+            <div id="ratingModal" class="rating-modal">
+                <div class="rating-content">
+                    <div class="rating-header">
+                        Рейтинг игроков
+                        <button id="closeRating" class="close-button">✖</button>
+                    </div>
+                                        <div class="rating-list">
+                        <table>
+                            <tr>
+                                <th>Место</th>
+                                <th>Имя Фамилия</th>
+                                <th>Опыт</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
